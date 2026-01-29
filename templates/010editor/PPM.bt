@@ -1,0 +1,32 @@
+//------------------------------------------------
+//--- 010 Editor v12.0.1 Binary Template
+//
+//      File: 
+//   Authors: 
+//   Version: 
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+char magic[2];
+char LF;
+if (magic == "P7") {
+   char name[69];
+   char LF;
+ }
+
+char size[7];
+char LF;
+char unh[3];
+char LF;  
+
+local uint width, height;
+SScanf(size, "%d %d", width, height);
+
+if (magic == "P6")
+  byte imageData[width * height * 3];
+else
+  byte imageData[width * height * 4];
